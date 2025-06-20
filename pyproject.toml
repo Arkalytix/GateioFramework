@@ -3,26 +3,44 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gateio-websocket-framework"
+name = "gateio-framework"
 version = "0.1.0"
 authors = [
-  { name="Your Name", email="your.email@example.com" }, # 請替換成您的資訊
+  { name="Arkalytix", email="Arkalytix@gmail.com" }, # 請將 email 換成您的
 ]
 description = "A simple and easy-to-use Python framework for the Gate.io WebSocket API v4."
 readme = "README.md"
 requires-python = ">=3.7"
 license = { file="LICENSE" }
+keywords = ["gateio", "websocket", "crypto", "trading", "api"]
 classifiers = [
+    "Development Status :: 4 - Beta",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+
+# --- 核心依賴項 ---
 dependencies = [
-    "websocket-client>=1.0.0", # 指定依賴套件與版本
+    "websocket-client>=1.0.0",
 ]
 
+# --- 專案連結 ---
 [project.urls]
-"Homepage" = "https://github.com/your-username/GateioFramework" # 請替換成您的 GitHub Repo URL
-"Bug Tracker" = "https://github.com/your-username/GateioFramework/issues" # 請替換
+"Homepage" = "https://arkalytix.sodomcode.com/"
+"Repository" = "https://github.com/Arkalytix/GateioFramework"
+"Bug Tracker" = "https://github.com/Arkalytix/GateioFramework/issues"
+
+
+# --- 可選依賴項 (處理 .env) ---
+[project.optional-dependencies]
+dev = [
+    "python-dotenv>=0.21.0",  # 用於在範例中讀取 .env 檔案
+]
