@@ -88,7 +88,7 @@ $env:GATEIO_API_SECRET="YOUR_API_SECRET"
     ```
 
     您將會看到程式啟動、連線成功，並開始接收訂單更新的訊息。按下 `Ctrl+C` 可以優雅地關閉程式。
-```
+
 
 ## 📘 API 類別概覽
 
